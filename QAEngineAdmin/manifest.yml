@@ -1,0 +1,8 @@
+---
+applications:
+ - name: QAEngineAdmin
+   memory: 512M
+   instances: 1
+   host: QAEngineAdmin
+   path: ./target/lightadmin-sandbox.war
+   

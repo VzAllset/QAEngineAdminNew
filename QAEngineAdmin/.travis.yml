@@ -1,0 +1,11 @@
+ language: java 
+ script: mvn install 
+ deploy: 
+   provider: cloudfoundry 
+   api: https://api.run.pivotal.io 
+   username: emramkumar@gmail.com 
+   password: 4H@ck!ng 
+   organization: TeleMessageSwitch 
+   space: development 
+   on: 
+     repo: VzAllset/QAEngineAdmin 
