@@ -30,7 +30,7 @@ public class TestSuiteConfiguration extends AdministrationConfiguration<QaTestSu
 	        return fragmentBuilder
 	                .field("testSuiteId").caption("Test Suite Id")
 	                .field("testSuiteName").caption("Test Suite Name")
-	                .dynamic("application.applicationName").caption("Application")
+	                .field("application").caption("Application")
 	                .field("newBrowser").caption("New Browser").build();
 	    }
 

@@ -16,7 +16,7 @@ public class FlowConfigurator extends AdministrationConfiguration<QaFlow>
 {
 	public EntityMetadataConfigurationUnit configuration(EntityMetadataConfigurationUnitBuilder configurationBuilder) {
         return configurationBuilder
-                .nameField("name")
+                .nameField("flowDesc")
                 .singularName("QaFlow")
                 .pluralName("QaFlows").build();
     }

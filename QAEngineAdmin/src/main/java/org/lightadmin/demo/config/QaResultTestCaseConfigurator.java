@@ -28,9 +28,9 @@ public class QaResultTestCaseConfigurator extends AdministrationConfiguration<Qa
     public FieldSetConfigurationUnit listView(FieldSetConfigurationUnitBuilder fragmentBuilder) {
         return fragmentBuilder
         		.field("resultTestCaseId").caption("Result Id")
-        		.dynamic("qaFlow.flowDesc").caption("Flow")
-        		.dynamic("qaStep.stepName").caption("Step")
-        		.dynamic("qaTestCase.testCaseName").caption("Test Case")
+        		.field("qaFlow").caption("Flow")
+        		.field("qaStep").caption("Step")
+        		.field("qaTestCase").caption("Test Case")
         		.field("threadId").caption("Thread Id")
         		.field("status").caption("Status")
                 .build();

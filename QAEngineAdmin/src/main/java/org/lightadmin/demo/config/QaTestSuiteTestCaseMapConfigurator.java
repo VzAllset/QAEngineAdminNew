@@ -30,8 +30,8 @@ public class QaTestSuiteTestCaseMapConfigurator extends AdministrationConfigurat
     public FieldSetConfigurationUnit listView(FieldSetConfigurationUnitBuilder fragmentBuilder) {
         return fragmentBuilder
         		.field("testSuiteTestCaseMapId").caption("Id")
-        		.dynamic("qaTestSuiteByTestSuiteId.testSuiteName").caption("Test Suite")
-        		.dynamic("qaTestCase.testCaseName").caption("Test Case")
+        		.field("qaTestSuiteByTestSuiteId").caption("Test Suite")
+        		.field("qaTestCase").caption("Test Case")
         		//.dynamic("qaTestSuiteByDepSuite.testSuiteName").caption("Dependent Test Suite")
         		.field("description").caption("Description")
         		.field("execSequence").caption("Execution Sequence")

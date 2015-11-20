@@ -16,7 +16,7 @@ public class ApplicationConfiguration extends AdministrationConfiguration<Applic
 {
 	 public EntityMetadataConfigurationUnit configuration(EntityMetadataConfigurationUnitBuilder configurationBuilder) {
 	        return configurationBuilder
-	                .nameField("name")
+	                .nameField("applicationName")
 	                .singularName("Application")
 	                .pluralName("Applications").build();
 	    }

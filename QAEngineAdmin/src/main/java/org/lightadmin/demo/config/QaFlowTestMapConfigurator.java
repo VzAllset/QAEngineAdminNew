@@ -28,8 +28,8 @@ public class QaFlowTestMapConfigurator extends AdministrationConfiguration<QaFlo
     public FieldSetConfigurationUnit listView(FieldSetConfigurationUnitBuilder fragmentBuilder) {
         return fragmentBuilder
         		.field("flowTestMapId").caption("Flow Test Map Id")
-        		.dynamic("qaFlow.flowDesc").caption("Flow")
-        		.dynamic("qaTestResult.testDescription").caption("Qa Test Result")
+        		.field("qaFlow").caption("Flow")
+        		.field("qaTestResult").caption("Qa Test Result")
         		.field("mappingDescription").caption("Mapping Description")
         		.field("createDt").caption("Created Date")
                 .build();

@@ -29,8 +29,8 @@ public class QaTestCaseFlowMapConfigurator extends AdministrationConfiguration<Q
     public FieldSetConfigurationUnit listView(FieldSetConfigurationUnitBuilder fragmentBuilder) {
         return fragmentBuilder
         		.field("testCaseFlowMapId").caption("TestCase Flow Map Id")
-        		.dynamic("qaTestCase.testCaseName").caption("Test Case")
-        		.dynamic("qaFlow.flowDesc").caption("Flow")
+        		.field("qaTestCase").caption("Test Case")
+        		.field("qaFlow").caption("Flow")
         		.field("mappingDesc").caption("Mapping Description")
         		.field("execSequence").caption("Execution Sequence")
         		.field("depFlow").caption("Dependent Flow")

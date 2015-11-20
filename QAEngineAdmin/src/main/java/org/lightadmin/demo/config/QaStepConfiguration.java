@@ -16,7 +16,7 @@ public class QaStepConfiguration  extends AdministrationConfiguration<QaStep>
 {
 	public EntityMetadataConfigurationUnit configuration(EntityMetadataConfigurationUnitBuilder configurationBuilder) {
         return configurationBuilder
-                .nameField("name")
+                .nameField("stepName")
                 .singularName("QaStep")
                 .pluralName("QaSteps").build();
     }
@@ -28,11 +28,11 @@ public class QaStepConfiguration  extends AdministrationConfiguration<QaStep>
     public FieldSetConfigurationUnit listView(FieldSetConfigurationUnitBuilder fragmentBuilder) {
         return fragmentBuilder
                 .field("stepId").caption("Step Id")
-                .field("qaData").caption("Data")
-                .field("qaObject").caption("Object")
                 .field("stepName").caption("Step Name")
                 .field("action").caption("Action")
                 .field("stepDesc").caption("Step Description")
+                .field("qaData").caption("Data")
+                .field("qaObject").caption("Object")
                 .build();
     }
 

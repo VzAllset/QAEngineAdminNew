@@ -16,7 +16,7 @@ public class QaObjectConfiguration extends AdministrationConfiguration<QaObject>
 {
 	public EntityMetadataConfigurationUnit configuration(EntityMetadataConfigurationUnitBuilder configurationBuilder) {
         return configurationBuilder
-                .nameField("name")
+                .nameField("objName")
                 .singularName("QaObject")
                 .pluralName("QaObjects").build();
     }

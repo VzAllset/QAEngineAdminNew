@@ -28,8 +28,8 @@ public class QaTestResultConfigurator extends AdministrationConfiguration<QaTest
     public FieldSetConfigurationUnit listView(FieldSetConfigurationUnitBuilder fragmentBuilder) {
         return fragmentBuilder
         		.field("testResultId").caption("Test Result Id")
-        		.dynamic("qaData.dataName").caption("Data")
-        		.dynamic("qaObject.objName").caption("Object")
+        		.field("qaData").caption("Data")
+        		.field("qaObject").caption("Object")
         		.field("testDescription").caption("Test Description")
         		.field("status").caption("Status")
         		.field("action").caption("Action")

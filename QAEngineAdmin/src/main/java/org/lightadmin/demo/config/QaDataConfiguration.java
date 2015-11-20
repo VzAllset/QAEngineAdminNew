@@ -16,7 +16,7 @@ public class QaDataConfiguration extends AdministrationConfiguration<QaData>
 {
 	public EntityMetadataConfigurationUnit configuration(EntityMetadataConfigurationUnitBuilder configurationBuilder) {
         return configurationBuilder
-                .nameField("name")
+                .nameField("dataValue")
                 .singularName("QaData")
                 .pluralName("QaData").build();
     }

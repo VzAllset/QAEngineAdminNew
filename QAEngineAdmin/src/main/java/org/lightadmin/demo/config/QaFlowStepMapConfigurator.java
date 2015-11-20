@@ -28,10 +28,10 @@ public class QaFlowStepMapConfigurator extends AdministrationConfiguration<QaFlo
     public FieldSetConfigurationUnit listView(FieldSetConfigurationUnitBuilder fragmentBuilder) {
         return fragmentBuilder
         		.field("flowStepMapId").caption("Flow Step Map Id")
-        		.dynamic("qaFlowByFlowId.flowDesc").caption("Flow")
-        		.dynamic("qaFlowByRefFlowId").caption("Qa Reference Flow")
-        		.dynamic("qaStepByRefStepId").caption("QA Reference Step")
-        		.dynamic("qaStepByStepId.stepDesc").caption("QA Step")
+        		.field("qaFlowByFlowId").caption("Flow")
+        		.field("qaFlowByRefFlowId").caption("Qa Reference Flow")
+        		.field("qaStepByRefStepId").caption("QA Reference Step")
+        		.field("qaStepByStepId").caption("QA Step")
         		.field("mappingDesc").caption("Mapping Description")
         		.field("execSequence").caption("Execution Sequence")
         		.field("refKey").caption("Reference Key")
